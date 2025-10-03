@@ -28,13 +28,13 @@ export default function KanbanBoard() {
   }
 
   return (
-    <section className="space-y-6">
+    <section className="h-full space-y-6 md:space-y-20">
       <header className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-semibold text-pretty">Kanban Board</h1>
           <p className="text-sm text-muted-foreground">Manage tasks across TODO, IN PROGRESS, and DONE.</p>
         </div>
-        
+
         {/* Single add button that controls the dialog */}
         <Button onClick={() => setAddOpen(true)} variant="default" className="gap-2">
           <Plus className="h-4 w-4" />

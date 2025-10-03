@@ -3,7 +3,7 @@ import KanbanBoard from "@/components/kanban/kanban-board"
 
 export default function Page() {
   return (
-    <main className="mx-auto max-w-7xl p-6">
+    <main className="mx-auto min-h-screen max-w-7xl p-4 md:p-6 relative">
       <KanbanProvider>
         <KanbanBoard />
       </KanbanProvider>

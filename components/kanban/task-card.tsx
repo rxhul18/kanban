@@ -16,9 +16,9 @@ export default function TaskCard({ task, index, onEdit }: {
   return (
     <Draggable draggableId={task.id} index={index}>
       {(provided, snapshot) => (
-        <div ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} className="mb-2">
+        <div ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} className="mb-2 cursor-grab">
           <Card
-            className={["border-border bg-card p-3 transition-colors", snapshot.isDragging
+            className={["border-border bg-card p-3 transition-colors py-2", snapshot.isDragging
               ? "ring-2 ring-primary"
               : "hover:bg-accent/40 focus-within:ring-2 focus-within:ring-ring",
             ].join(" ")}
